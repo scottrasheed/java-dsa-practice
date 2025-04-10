@@ -11,3 +11,11 @@
 - Install the Java Development Kit (JDK)
 - Use an IDE (e.g., IntelliJ IDEA or VS Code)
 - Verify installation: run `java -version` and `javac -version` in the terminal
+
+const message = 'Hello world' // Edit me
+
+// Update header text
+document.querySelector('#header').innerHTML = message
+
+// Log to console
+console.log(message)
