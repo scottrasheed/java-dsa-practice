@@ -12,11 +12,13 @@
 - Use an IDE (e.g., IntelliJ IDEA or VS Code)
 - Verify installation: run `java -version` and `javac -version` in the terminal
 
-## Writing Your First Java Program
+## Writing My First Java Program
 
-```java
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, world!");
-    }
-}
+const message = 'Hello world' // Edit me
+
+// Update header text
+document.querySelector('#header').innerHTML = message
+
+// Log to console
+console.log(message)
+
