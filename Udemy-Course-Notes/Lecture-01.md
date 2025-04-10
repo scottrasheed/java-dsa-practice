@@ -1,21 +1,12 @@
-# Lecture 01 - Introduction to Java + DSA
+# Lecture 1: Introduction to Data Structures and Algorithms
 
-## What is Java?
+- Course: Data Structures and Algorithms in Java (Udemy)
+- What I learned:
+  - DSA = Data Structures and Algorithms
+  - Course covers Arrays, Linked Lists, Recursion, Stacks, Queues, Trees, and more
+- Why it matters:
+  - Improves logic and problem-solving
+  - Essential for coding interviews and real-world software development
 
-- Java is a general-purpose, object-oriented programming language.
-- It is platform-independent because of the Java Virtual Machine (JVM).
-- Commonly used for building enterprise applications, Android apps, and web backends.
-
-## Setting Up Java
-
-- Install the Java Development Kit (JDK)
-- Use an IDE (e.g., IntelliJ IDEA or VS Code)
-- Verify installation: run `java -version` and `javac -version` in the terminal
-
-const message = 'Hello world' // Edit me
-
-// Update header text
-document.querySelector('#header').innerHTML = message
-
-// Log to console
-console.log(message)
+---
+*This is part of my Java + DSA learning journey.*
