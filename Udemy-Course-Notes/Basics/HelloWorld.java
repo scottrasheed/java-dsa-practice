@@ -1,5 +1,7 @@
-public class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, DSA!");
-    }
-}
+const message = 'Hello world' // Edit me
+
+// Update header text
+document.querySelector('#header').innerHTML = message
+
+// Log to console
+console.log(message)
