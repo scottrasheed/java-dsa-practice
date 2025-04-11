@@ -1,0 +1,29 @@
+package misc.big_o;
+
+class Main {
+
+    /*
+     * This method prints all pairs of (i, j) for n x n iterations,
+     * followed by a single loop printing values of k from 0 to n.
+     *
+     * Time Complexity: O(n^2 + n)
+     * - The nested loops (i and j): O(n * n) = O(n^2)
+     * - The single loop over k: O(n)
+     * - Combined: O(n^2 + n) → Drop the lower order for Big O: O(n^2)
+     */
+    public static void printItems(int n) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.println(i + " " + j);
+            }
+        }
+
+        for (int k = 0; k < n; k++) {
+            System.out.println(k);
+        }
+    }
+
+    public static void main(String[] args) {
+        printItems(10);
+    }
+}
