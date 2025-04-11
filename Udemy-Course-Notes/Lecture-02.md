@@ -38,4 +38,8 @@
 ---
 
 ## Useful Tips
-- **Drop Non-D**
+- **Drop Non-Dominant Terms**: 
+  - In O(n² + n), focus on O(n²) as it will dominate for large `n`.
+  
+- **Drop Constants**:
+  - O(2n) simplifies to O(n).
