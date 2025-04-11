@@ -1,0 +1,8 @@
+public static int addItems(int n) {
+    // Time Complexity: O(1)
+    // - The number of operations does not depend on the input size (n).
+    // - This method performs a constant number of operations (3 additions), regardless of how large n is.
+    // - In Big O notation, this is referred to as constant time complexity (O(1)).
+    // - O(1) is the most efficient big O.
+    return n + n + n;
+}
