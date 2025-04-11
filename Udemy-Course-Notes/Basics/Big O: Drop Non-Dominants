@@ -9,7 +9,16 @@ class Main {
      * Time Complexity: O(n^2 + n)
      * - The nested loops (i and j): O(n * n) = O(n^2)
      * - The single loop over k: O(n)
-     * - Combined: O(n^2 + n) → Drop the lower order for Big O: O(n^2)
+     * - Combined: O(n^2 + n)
+     *
+     * Big O Simplification:
+     * - O(n^2) is the dominant term.
+     * - O(n) is the non-dominant term and becomes irrelevant as n grows large.
+     * - For example: if n = 100
+     *   - O(n^2) → 100 * 100 = 10,000 operations
+     *   - O(n)   → 100 operations
+     *   - O(n^2 + n) ≈ O(10,000 + 100), but 100 is negligible in comparison
+     * - Therefore, the final simplified complexity is O(n^2)
      */
     public static void printItems(int n) {
         for (int i = 0; i < n; i++) {
