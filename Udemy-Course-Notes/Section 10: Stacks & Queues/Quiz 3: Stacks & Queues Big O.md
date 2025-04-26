@@ -1,4 +1,4 @@
-# Stack and Queue Basics - 3 Question Quiz
+# Quiz 3: Stack and Queue Big O - 3 Question Quiz
 
 ---
 
