@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Main {
-    
+
     // Write the isBalancedParentheses method here
     public static boolean isBalancedParentheses(String str) {
         int balance = 0;  // Keep track of the balance of parentheses
