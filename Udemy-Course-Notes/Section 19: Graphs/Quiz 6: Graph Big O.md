@@ -1,32 +1,40 @@
 # Quiz 6: Graph Big O
 
-<details>
-<summary><strong>Question 1</strong></summary>
+---
 
-**Adding a Vertex in a Graph with an Adjacency List is O(1):**  
+### Question 1
+**Adding a Vertex in a Graph with an Adjacency List is O(1):**
+
+<details>
+<summary><em>Click to reveal the answer</em></summary>
+
 ✅ **True**
 
 </details>
 
 ---
 
-<details>
-<summary><strong>Question 2</strong></summary>
+### Question 2
+**Graphs are the go-to data structure when you need to represent entities and the relationships between them:**
 
-**Graphs are the go-to data structure when you need to represent entities and the relationships between them:**  
+<details>
+<summary><em>Click to reveal the answer</em></summary>
+
 ✅ **True**
 
 </details>
 
 ---
 
-<details>
-<summary><strong>Question 3</strong></summary>
+### Question 3
+**Removing a vertex is O(1):**
 
-**Removing a vertex is O(1):**  
-❌ **False**  
-- Removing a vertex requires not only deleting the vertex itself, but also removing all edges pointing to it.
-- This operation is typically **O(V + E)**, where **V** is vertices and **E** is edges.
+<details>
+<summary><em>Click to reveal the answer</em></summary>
+
+❌ **False**
+
+> Removing a vertex usually takes **O(V + E)** time because you must delete all edges to and from the vertex.
 
 </details>
 
