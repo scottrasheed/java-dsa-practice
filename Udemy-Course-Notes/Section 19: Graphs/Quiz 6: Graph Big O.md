@@ -10,6 +10,10 @@
 
 ✅ **True**
 
+**Explanation:**  
+Adding a new vertex only involves inserting a key into a HashMap with an empty ArrayList.  
+Both operations are **constant time**, so the overall time complexity is **O(1)**.
+
 </details>
 
 ---
@@ -21,6 +25,10 @@
 <summary><em>Click to reveal the answer</em></summary>
 
 ✅ **True**
+
+**Explanation:**  
+Graphs are perfect for modeling **connections** between objects (like cities, friends, computers, etc.).  
+They naturally represent **entities** (as vertices) and **relationships** (as edges).
 
 </details>
 
@@ -34,7 +42,9 @@
 
 ❌ **False**
 
-> Removing a vertex usually takes **O(V + E)** time because you must delete all edges to and from the vertex.
+**Explanation:**  
+Removing a vertex requires **deleting all edges** connected to it,  
+which takes **O(V + E)** time in the worst case, not constant **O(1)**.
 
 </details>
 
