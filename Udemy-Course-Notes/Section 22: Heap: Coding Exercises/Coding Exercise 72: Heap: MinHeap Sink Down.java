@@ -39,7 +39,7 @@ public class MinHeap {
             current = parent(current);
         }
     }
-
+ // Sink down method implementation
     private void sinkDown(int index) {
         int minIndex = index;
         while (true) {
@@ -63,7 +63,7 @@ public class MinHeap {
         }
     }
 
-    // REMOVE METHOD
+    
     public Integer remove() {
         if (heap.size() == 0) {
             return null;  // Return null if the heap is empty
