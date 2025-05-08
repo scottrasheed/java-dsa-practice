@@ -1,9 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+class BinarySearchTree {
 
-public class BinarySearchTree {
-	
     private Node root;
 
     class Node {
@@ -15,11 +14,11 @@ public class BinarySearchTree {
             this.value = value;
         }
     }
-    
+
     public Node getRoot() {
         return root;
     }
-    
+
     public List<Integer> inorderTraversal() {
         List<Integer> result = new ArrayList<>();
         inorderHelper(this.root, result);
@@ -46,32 +45,30 @@ public class BinarySearchTree {
         if (Math.abs(leftHeight - rightHeight) > 1) return -1;
         return 1 + Math.max(leftHeight, rightHeight);
     }
-    
+
     public void sortedArrayToBST(int[] nums) {
         this.root = sortedArrayToBST(nums, 0, nums.length - 1);
     }
-    
-private Node sortedArrayToBST(int[] nums, int left, int right) {
-    if (left > right) return null;
 
-    int mid = left + (right - left) / 2;
-    Node node = new Node(nums[mid]);
+    private Node sortedArrayToBST(int[] nums, int left, int right) {
+        if (left > right) return null;
 
-    node.left = sortedArrayToBST(nums, left, mid - 1);
-    node.right = sortedArrayToBST(nums, mid + 1, right);
+        int mid = left + (right - left) / 2;
+        Node node = new Node(nums[mid]);
 
-    return node;
+        node.left = sortedArrayToBST(nums, left, mid - 1);
+        node.right = sortedArrayToBST(nums, mid + 1, right);
+
+        return node;
+    }
 }
-
-}
-
 import java.util.Arrays;
 import java.util.List;
 
 public class Main {
-    
+
     public static void main(String[] args) {
-        
+
         // Test: Convert an empty array
         System.out.println("\n----- Test: Convert Empty Array -----\n");
         checkBalancedAndCorrectTraversal(new int[]{}, Arrays.asList());
@@ -92,9 +89,9 @@ public class Main {
         System.out.println("\n----- Test: Convert Large Sorted Array -----\n");
         checkBalancedAndCorrectTraversal(
                 Arrays.stream(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}).toArray(),
-                Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15));
+                Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+        );
     }
-
 
     private static void checkBalancedAndCorrectTraversal(int[] nums, List<Integer> expectedTraversal) {
         BinarySearchTree bst = new BinarySearchTree();
@@ -110,6 +107,43 @@ public class Main {
             System.out.println("FAIL: Tree is either not balanced or inorder traversal is incorrect.\n");
         }
     }
-    
 }
 
+/*
+EXPECTED OUTPUT:
+
+----- Test: Convert Empty Array -----
+
+Is balanced: true
+Inorder traversal: []
+Expected traversal: []
+PASS: Tree is balanced and inorder traversal is correct.
+
+----- Test: Convert Single Element Array -----
+
+Is balanced: true
+Inorder traversal: [10]
+Expected traversal: [10]
+PASS: Tree is balanced and inorder traversal is correct.
+
+----- Test: Convert Sorted Array with Odd Number of Elements -----
+
+Is balanced: true
+Inorder traversal: [1, 2, 3, 4, 5]
+Expected traversal: [1, 2, 3, 4, 5]
+PASS: Tree is balanced and inorder traversal is correct.
+
+----- Test: Convert Sorted Array with Even Number of Elements -----
+
+Is balanced: true
+Inorder traversal: [1, 2, 3, 4, 5, 6]
+Expected traversal: [1, 2, 3, 4, 5, 6]
+PASS: Tree is balanced and inorder traversal is correct.
+
+----- Test: Convert Large Sorted Array -----
+
+Is balanced: true
+Inorder traversal: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+Expected traversal: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+PASS: Tree is balanced and inorder traversal is correct.
+*/
