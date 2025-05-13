@@ -1,4 +1,4 @@
-# Sorting Algorithms Quiz
+# Quiz 7: Basic Sorts
 
 Test your understanding of Bubble Sort, Selection Sort, and Insertion Sort.
 
