@@ -1,5 +1,5 @@
-# java-dsa-practice
-Practice code and notes from my Java + DSA course
+# javascript-dsa-practice
+Practice code and notes from my JavaScript + DSA course
 
 ## 🏆 Certification received for JavaScript on 5/17/2025
 
